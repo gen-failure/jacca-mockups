@@ -4,6 +4,9 @@ import {Materialize} from 'materialize-css';
 import {Col,Card,Navbar,Tabs,Tab,Row,Input,Button, Icon} from 'react-materialize';
 
 class SignIn extends Component {
+  constructor() {
+    super();
+  }
   render() {
     return (
       <div>
@@ -15,7 +18,7 @@ class SignIn extends Component {
                 <Input placeholder="Email" type="email" s={12} label="Your email" />
                 <Input placeholder="Password" type="password" label="Password" s={12} />
                 <Col s={12} className="center">
-                  <Button large className="btn-primary" waves="orange">Sign in</Button>
+                  <Button large className="btn-primary" waves="orange" onClick={this.props['sign-in-call']}>Sign in</Button>
                 </Col>
               </Row>
             </Card>

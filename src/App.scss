@@ -12,6 +12,42 @@ nav div.nav-wrapper a.brand-logo {
   width:100%!important;
 }
 
+#logged-window {
+  position:relative;
+  min-height:500px;
+  button[data-activates=sidebar] {
+    display:none;
+  }
+}
+#sidebar {
+  margin-top:0;
+  position:absolute;
+  width:300px;
+  .collection {
+    margin:0;
+  }
+  #contacts  {
+    a.secondary-content {
+      right:0;
+      i {
+        margin-right:0.2rem;
+      }
+    }
+  }
+}
+
+#mainView {
+  width:100%;
+  height:100%;
+  padding-left:300px;
+  position:absolute;
+  #mainViewContent {
+    width:100%;
+    height:100%;
+    background-color:red;
+    padding:1rem;
+  }
+}
 .btn-primary {
   @extend .btn, .indigo, .accent-2;
 }
